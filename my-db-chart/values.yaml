@@ -1,0 +1,22 @@
+mongodb:
+  enabled: true
+  image:
+    registry: docker.io
+    repository: bitnamilegacy/mongodb
+    tag: 6.0.8-debian-11-r0
+  useStatefulSet: true
+  persistence:
+    size: 2Gi
+  resources:
+    requests:
+      memory: "512Mi"
+      cpu: "500m"
+    limits:
+      memory: "1Gi"
+      cpu: "1"
+  auth:
+    rootPassword:
+    usernames: 
+    - test1
+    databases: 
+    - db_1_test
