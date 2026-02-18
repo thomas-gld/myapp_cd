@@ -10,4 +10,4 @@ patchesStrategicMerge:
 images:
 - name: patrah2/myjsapp
   newName: thomasgld/myjsapp
-  newTag: v1.0.1
+  newTag: v1.0.0
